@@ -1,4 +1,4 @@
-class MultilineTextChoice:
+class KD_MultilineTextChoice:
     @classmethod
     def INPUT_TYPES(cls):
         return {

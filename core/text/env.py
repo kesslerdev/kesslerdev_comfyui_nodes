@@ -1,4 +1,4 @@
-class EnvironmentVariableGetter:
+class KD_EnvironmentVariableGetter:
     @classmethod
     def INPUT_TYPES(cls):
         return {
