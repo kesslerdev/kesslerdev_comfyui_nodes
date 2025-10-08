@@ -1,3 +1,5 @@
+from ...utils import kd_text_category
+
 class KD_MultilineTextChoice:
     @classmethod
     def INPUT_TYPES(cls):
@@ -20,7 +22,7 @@ class KD_MultilineTextChoice:
     # Function to process the inputs
     FUNCTION = "process"
     # Category under which this node will appear in the UI
-    CATEGORY = "Utility"
+    CATEGORY = kd_text_category
 
     def process(self, prepend_text, multiline_text, append_text, wrap_index, selected_line_number):
         # Split the input text into a list of non-empty, trimmed lines

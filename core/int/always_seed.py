@@ -6,7 +6,7 @@ class AnyType(str):
 any_typ = AnyType("*")
 
 import random
-
+from ...utils import kd_number_category
 class KD_AlwaysSeed:
 
     @classmethod
@@ -17,7 +17,7 @@ class KD_AlwaysSeed:
     RETURN_NAMES = ("dyna_seed",)
     FUNCTION = "seedint"
     OUTPUT_NODE = True
-    CATEGORY = "Utility"
+    CATEGORY = kd_number_category
 
     @staticmethod
     def seedint(signal):

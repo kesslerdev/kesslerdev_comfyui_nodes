@@ -1,3 +1,5 @@
+from ...utils import kd_text_category
+
 class KD_EnvironmentVariableGetter:
     @classmethod
     def INPUT_TYPES(cls):
@@ -14,7 +16,7 @@ class KD_EnvironmentVariableGetter:
     # Function to process the inputs
     FUNCTION = "process"
     # Category under which this node will appear in the UI
-    CATEGORY = "Utility"
+    CATEGORY = kd_text_category
 
     def process(self, var_name):
         import os
